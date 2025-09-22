@@ -97,7 +97,7 @@ namespace ApiMonetizationGateway.Services.UsageTrackingService.Impl
             if (totalRequests <= tier.MonthlyQuota)
                 return tier.Price;
 
-            // Example: charge $0.01 per extra request
+            // Charge $0.01 per extra request
             var overage = totalRequests - tier.MonthlyQuota;
             return tier.Price + (overage * 0.01m);
         }

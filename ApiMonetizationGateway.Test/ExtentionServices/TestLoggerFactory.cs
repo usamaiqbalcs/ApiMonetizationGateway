@@ -8,7 +8,7 @@ namespace ApiMonetizationGateway.Tests.ExtentionServices
         {
             using var loggerFactory = LoggerFactory.Create(builder =>
             {
-                builder.AddConsole(); // Optional: logs appear in test output
+                builder.AddConsole();
             });
             return loggerFactory.CreateLogger<T>();
         }

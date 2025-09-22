@@ -9,8 +9,6 @@ namespace ApiMonetizationGateway.Models
         public int TotalRequests { get; set; }
         public decimal TotalCost { get; set; }
         public int TierId { get; set; }
-
-        // Navigation
         public Customer Customer { get; set; }
         public Tier Tier { get; set; }
     }

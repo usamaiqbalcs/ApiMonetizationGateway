@@ -9,8 +9,6 @@ namespace ApiMonetizationGateway.Models
         public DateTime Timestamp { get; set; }
         public int RequestSize { get; set; } = 1;
         public bool Success { get; set; } = true;
-
-        // Navigation
         public Customer Customer { get; set; }
     }
 }

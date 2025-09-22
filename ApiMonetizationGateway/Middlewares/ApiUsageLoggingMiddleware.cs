@@ -19,7 +19,7 @@ namespace ApiMonetizationGateway.Middlewares
         {
             try
             {
-                // Extract API key from headers (assuming X-API-Key)
+                // Extract API key from headers (X-API-Key)
                 var apiKey = context.Request.Headers["X-API-Key"].FirstOrDefault();
 
                 Customer customer = null;

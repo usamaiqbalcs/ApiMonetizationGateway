@@ -9,8 +9,6 @@ namespace ApiMonetizationGateway.Models
         public int TierId { get; set; }
         public string ApiKey { get; set; } = string.Empty;
         public bool IsActive { get; set; } = true;
-
-        // Navigation
         public Tier Tier { get; set; }
         public ICollection<ApiUsageLog> ApiUsageLogs { get; set; }
         public ICollection<MonthlyUsageSummary> MonthlySummaries { get; set; }

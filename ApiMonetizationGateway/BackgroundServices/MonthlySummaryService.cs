@@ -6,8 +6,8 @@ namespace ApiMonetizationGateway.BackgroundServices
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly ILogger<MonthlySummaryService> _logger;
-        //private readonly TimeSpan _interval = TimeSpan.FromHours(24); // Run daily
-        private readonly TimeSpan _interval = TimeSpan.FromMinutes(1); // every minute
+        private readonly TimeSpan _interval = TimeSpan.FromHours(24); // Run daily
+        //private readonly TimeSpan _interval = TimeSpan.FromMinutes(1); // every minute
 
         public MonthlySummaryService(IServiceProvider serviceProvider, ILogger<MonthlySummaryService> logger)
         {

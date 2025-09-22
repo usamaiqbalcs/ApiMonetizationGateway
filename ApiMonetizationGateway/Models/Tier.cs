@@ -9,8 +9,6 @@ namespace ApiMonetizationGateway.Models
         public int RateLimit { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
-
-        // Navigation
         public ICollection<Customer> Customers { get; set; }
     }
 }
